@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    background:linear-gradient(
+        135deg,
+        #ffdce8,
+        #ffeef5,
+        #fff7fb);
+
+    font-family:Arial, Helvetica, sans-serif;
+    padding:40px 0;
+    overflow-y:auto;
+}
+.card{
+    background:white;
+    width:90%;
+    max-width: 600px;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    transition:0.5s;
+}
+ .card:hover{
+    transform:translateY(-10px);
+}
+h1 {
+    color: #ff4081;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.subtitle{
+    font-size: 22px;
+    color:#666;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+#letter {
+    opacity: 0;
+    transform: translateY(20px);
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all 0.6s ease;
+    background: #fff8fb;
+    border: 2px solid #ffd6e8;
+    border-radius: 15px;
+    padding: 0 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+#letter.show {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 1000px;
+    padding: 20px;
+    pointer-events: auto;
+}
+.envelope {
+    position: relative;
+    width: 180px;
+    height: 120px;
+    margin: 30px auto;
+    background: #ff7aa8;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+.envelope:hover {
+    transform: scale(1.05);
+}
+.envelope {
+    font-size: 90px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.envelope:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+#gallery{
+    display:none;
+    margin-top:30px;
+    text-align:center;
+}
+
+.collage{
+    width:100%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    transition:transform .4s ease;
+}
+
+.collage:hover{
+    transform:scale(1.03);
+}
+#galleryButton{
+    display:none;
+
+    padding:20px 50px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    border-radius:15px;
+
+    margin-top:25px;
+}
+#galleryButton:hover{
+    transform:scale(1.08);
+    background:#e91e63;
+}
